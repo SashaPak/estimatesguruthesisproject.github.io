@@ -160,7 +160,7 @@ body {
     padding-bottom: 100px;
 }
 
-.business-desc {
+.business__desc {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -174,7 +174,7 @@ body {
     margin-top: 30px;
 }
 
-.business-grid {
+.business__grid {
     margin-top: 60px;
     display: grid;
     row-gap: 30px;
@@ -182,33 +182,30 @@ body {
     grid-template: repeat(2, auto) / repeat(3, auto);
 }
 
-.business-card {
+.business__grid-card {
     background: #ffffff;
     width: 350px;
     padding: 46px 35px;
     border-radius: 6px;
     transition: all 1s;
+    box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
 
-    .business-card-title {
+    .business__card-title {
         font-weight: 700;
         font-size: 22px;
         line-height: 33px;
         color: #292d33;
         margin-bottom: 16px;
     }
-    .business-card-subtitle {
+    .business__card-subtitle {
         width: 280px;
     }
-    .business-card-icon {
+    .business__card-icon {
         padding: 14px;
         border: 1px solid #f1f6fa;
         border-radius: 12px;
         margin-bottom: 30px;
     }
-}
-.business-card:hover {
-    box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
-    transition: all 0.3s;
 }
 
 // FEATURESFIRST FEATURESFIRST FEATURESFIRST FEATURESFIRST FEATURESFIRST
@@ -308,7 +305,7 @@ body {
     background: #f1f6fa;
 }
 
-.advantages-desc {
+.advantages__desc {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -534,7 +531,7 @@ body {
 .price__option-plus::before {
     content: "";
     display: block;
-    background: url("/images/icons/checkmark-icon.svg");
+    background: url("../images/icons/checkmark-icon.svg");
     width: 25px;
     height: 26px;
     margin-right: 7px;
@@ -600,3 +597,124 @@ body {
     justify-content: center;
     margin-top: 60px;
 }
+
+// CONTACT CONTACT CONTACT CONTACT CONTACT
+// CONTACT CONTACT CONTACT CONTACT CONTACT
+
+.contact {
+    background: #f1f6fa;
+}
+
+.main__contact {
+    padding: 120px 0;
+}
+
+.contact__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 38px;
+    line-height: 147%;
+    letter-spacing: -0.015em;
+}
+
+.contact__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.015em;
+    margin: 24px 0 0;
+}
+
+.contact__contacts {
+    margin-top: 80px;
+}
+
+.contact__about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.contact__about:last-child {
+    margin-bottom: 0;
+}
+
+.contact__about-info {
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: #292d33;
+}
+
+.contact__form {
+    background: #ffffff;
+    box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
+    border-radius: 6px;
+}
+
+.contact__form-title {
+    font-size: 30px;
+    line-height: 133%;
+    letter-spacing: -0.015em;
+    color: #292d33;
+    font-weight: 800;
+}
+
+.contact__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form {
+    padding: 50px 50px;
+    width: 445px;
+}
+
+.contact__form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+
+.contact__form-label:last-child {
+    margin-bottom: 0;
+}
+
+.contact__form-input {
+    padding: 5.5px 0;
+    border-bottom: 1px solid #9497a1;
+}
+
+input[class="contact__form-input"] {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.015em;
+    color: #292d33;
+}
+
+.contact__form-input::placeholder,
+.contact__form-text::placeholder {
+    color: #9497a1;
+}
+
+.contact__form-info {
+    margin: 30px 0 83px;
+}
+
+.contact__form-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+// BLOG BLOG BLOG BLOG BLOG
+// BLOG BLOG BLOG BLOG BLOG
+

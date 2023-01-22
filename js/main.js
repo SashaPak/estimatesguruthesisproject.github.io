@@ -16,6 +16,18 @@ $(function () {
     $('.advantages__slider').slick('slickNext')
   })
 
-  
+  $('.blog__slider').slick({
+    arrows: false,
+    slidesToShow: 3,
+    infinite: true,
+  })
 
+  $('.blog__slider-prev').on('click', function (e) {
+    e.preventDefault()
+    $('.blog__slider').slick('slickPrev')
+  })
+  $('.blog__slider-next').on('click', function (e) {
+    e.preventDefault()
+    $('.blog__slider').slick('slickNext')
+  })
 })
