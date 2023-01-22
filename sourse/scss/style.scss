@@ -718,3 +718,96 @@ input[class="contact__form-input"] {
 // BLOG BLOG BLOG BLOG BLOG
 // BLOG BLOG BLOG BLOG BLOG
 
+.main__blog {
+    padding: 140px 0 120px;
+}
+
+.blog__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 147%;
+    letter-spacing: -0.015em;
+    color: #292d33;
+}
+
+.blog__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__slider-arrow {
+    padding: 15px 40px;
+    background: #f0f9ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.blog__slider-prev {
+    margin-right: 15px;
+}
+
+.blog__slider-arrows {
+    display: flex;
+}
+
+.blog__card-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.015em;
+}
+
+.blog__card-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: -0.015em;
+    color: #292d33;
+}
+
+.blog__card-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.015em;
+}
+
+.blog__card-more {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+    color: #185cff;
+}
+
+.blog__card-info {
+    padding-top: 20px;
+}
+
+.blog__card-subtitle {
+    padding-top: 12px;
+}
+
+.blog__card-desc {
+    padding: 12px 0;
+}
+
+.blog__card-box {
+    width: 350px;
+}
+
+.blog__slider-wrapper {
+    margin-top: 50px;
+}
+
+.blog__slide {
+    
+}
