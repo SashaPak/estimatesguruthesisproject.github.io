@@ -30,4 +30,19 @@ $(function () {
     e.preventDefault()
     $('.blog__slider').slick('slickNext')
   })
+
+  $('.testimonial__slider').slick({
+    arrows: false,
+    slidesToShow: 2,
+    infinite: true,
+  })
+
+  $('.testimonial__slider-prev').on('click', function (e) {
+    e.preventDefault()
+    $('.testimonial__slider').slick('slickPrev')
+  })
+  $('.testimonial__slider-next').on('click', function (e) {
+    e.preventDefault()
+    $('.testimonial__slider').slick('slickNext')
+  })
 })
