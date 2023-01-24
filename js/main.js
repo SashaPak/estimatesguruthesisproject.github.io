@@ -45,4 +45,17 @@ $(function () {
     e.preventDefault()
     $('.testimonial__slider').slick('slickNext')
   })
+
+  $('.about__acc-link').on('click', function (e) {
+    e.preventDefault()
+    if ($(this).hasClass('about__acc-link--active')) {
+      $(this).removeClass('about__acc-link--active')
+      $(this).children('.about__acc-text').slideUp()
+    } else {
+      $('.about__acc-link').removeClass('about__acc-link--active')
+      $('.about__acc-text').slideUp()
+      $(this).addClass('about__acc-link--active')
+      $(this).children('.about__acc-text').slideDown()
+    }
+  })
 })
