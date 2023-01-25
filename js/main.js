@@ -5,6 +5,16 @@ $(function () {
     infinite: true,
     dots: true,
     appendDots: $('.advantages__dots'),
+    responsive:
+      [
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+          },
+        },
+      ]
   })
 
   $('.advantages__slider-prev').on('click', function (e) {
@@ -20,6 +30,28 @@ $(function () {
     arrows: false,
     slidesToShow: 3,
     infinite: true,
+    responsive:
+      [
+        {
+          breakpoint: 1150,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+          },
+        },
+      ]
   })
 
   $('.blog__slider-prev').on('click', function (e) {
@@ -35,6 +67,28 @@ $(function () {
     arrows: false,
     slidesToShow: 2,
     infinite: true,
+    responsive:
+      [
+        {
+          breakpoint: 1150,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+            draggable: true,
+          },
+        },
+      ]
   })
 
   $('.testimonial__slider-prev').on('click', function (e) {
@@ -58,4 +112,29 @@ $(function () {
       $(this).children('.about__acc-text').slideDown()
     }
   })
+
+  $(".header__nav-list a, .footer__column-link, .footer__top-logo").on("click", function (e) {
+    e.preventDefault()
+    var id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 800)
+  })
+
+  setInterval(() => {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+      $('.burger').addClass('burger--follow')
+    } else {
+      $('.burger').removeClass('burger--follow')
+    }
+  }, 0)
+  $('.burger, .overlay, .header__top a').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top--open')
+    $('.overlay').toggleClass('overlay--show')
+  })
+
+  $('.footer__top-title--slide').on('click', function () {
+    $(this).next().slideToggle()
+  })
+
 })

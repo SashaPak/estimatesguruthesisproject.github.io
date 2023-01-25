@@ -21,7 +21,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <div class="overlay"></div>
+      <header class="header" id="home">
+        <a class="burger burger--follow" href="#">
+          <span></span>
+        </a>
         <div class="header__top">
           <div class="container">
             <div class="header__top-inner">
@@ -34,13 +38,13 @@
                     <a class="header__nav-link" href="#"> Home </a>
                   </li>
                   <li class="header__nav-item">
-                    <a class="header__nav-link" href="#"> Pricing </a>
+                    <a class="header__nav-link" href="#price"> Pricing </a>
                   </li>
                   <li class="header__nav-item">
                     <a class="header__nav-link" href="#"> Templates </a>
                   </li>
                   <li class="header__nav-item">
-                    <a class="header__nav-link" href="#"> Blog </a>
+                    <a class="header__nav-link" href="#blog"> Blog </a>
                   </li>
                   <li class="header__nav-item">
                     <a class="header__nav-link" href="#"> Cases </a>
@@ -77,7 +81,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="main__business business">
+        <section class="main__business business" id="business">
           <div class="container">
             <div class="business__desc">
               <p class="business__title title">For Your Business</p>
@@ -162,7 +166,7 @@
             </div>
           </div>
         </section>
-        <section class="main__featuresfisrt features">
+        <section class="main__featuresfisrt features" id="features">
           <div class="container">
             <div class="features__topfirst">
               <div class="features__descfirst">
@@ -198,7 +202,7 @@
             </div>
           </div>
         </section>
-        <section class="main__features-info features-info">
+        <section class="main__features-info features-info" id="info">
           <div class="features__info">
             <div class="container">
               <div class="features__info-inner">
@@ -225,7 +229,7 @@
             </div>
           </div>
         </section>
-        <section class="main__featuressecond features">
+        <section class="main__featuressecond features" id="features2">
           <div class="container">
             <div class="features__topsecond">
               <div class="features__descfirst">
@@ -262,7 +266,7 @@
             </div>
           </div>
         </section>
-        <section class="main__advantages advantages">
+        <section class="main__advantages advantages" id="advantages">
           <div class="container">
             <div class="advantages__inner">
               <div class="advantages__desc">
@@ -332,7 +336,7 @@
             </div>
           </div>
         </section>
-        <section class="main__price price">
+        <section class="main__price price" id="price">
           <div class="container">
             <div class="price__inner">
               <div class="price__head">
@@ -407,13 +411,11 @@
                   </div>
                 </div>
               </div>
-              <div class="price__compare-wrapper">
-                <a class="price__compare button" href="#">Сompare options</a>
-              </div>
+              <div class="price__compare-wrapper"><a class="price__compare button" href="#">Сompare options</a></div>
             </div>
           </div>
         </section>
-        <section class="main__contact contact">
+        <section class="main__contact contact" id="contact">
           <div class="container">
             <div class="contact__body">
               <div class="contact__content">
@@ -491,7 +493,7 @@
             </div>
           </div>
         </section>
-        <section class="main__blog blog">
+        <section class="main__blog blog" id="blog">
           <div class="container">
             <div class="blog__head">
               <h2 class="blog__title">Our blog</h2>
@@ -616,7 +618,7 @@
             </div>
           </div>
         </section>
-        <section class="main__testimonial testimonial">
+        <section class="main__testimonial testimonial" id="testimonial">
           <div class="container">
             <div class="testimonial__head">
               <div class="testimonial__title">
@@ -724,7 +726,7 @@
             </div>
           </div>
         </section>
-        <section class="main__about about">
+        <section class="main__about about" id="about">
           <div class="about__top">
             <div class="container">
               <div class="about__desc">
@@ -735,28 +737,28 @@
                 </p>
               </div>
               <div class="about__logos">
-                <div class="about__logo">
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer1-logo.png" alt="" />
-                </div>
-                <div class="about__logo">
+                </a>
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer2-logo.png" alt="" />
-                </div>
-                <div class="about__logo">
+                </a>
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer3-logo.png" alt="" />
-                </div>
-                <div class="about__logo">
+                </a>
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer4-logo.png" alt="" />
-                </div>
-                <div class="about__logo">
+                </a>
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer5-logo.png" alt="" />
-                </div>
-                <div class="about__logo">
+                </a>
+                <a class="about__logo" href="#">
                   <img src="images/customerlogos/customer6-logo.png" alt="" />
-                </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="about__body">
+          <div class="about__body" id="faq">
             <div class="container">
               <p class="about__body-title title">Frequently asked questions</p>
               <ul class="about__acc">
@@ -862,9 +864,9 @@
             <div class="footer__top-inner">
               <div class="footer__top-about">
                 <div class="footer__top-column">
-                  <div class="footer__top-logo">
+                  <a class="footer__top-logo" href="#">
                     <img src="images/estimatesguru-logo-footer.svg" alt="" />
-                  </div>
+                  </a>
                   <div class="footer__top-title">
                     Sed ut perspiciatis unde omnis iste natus error sit
                     voluptatem accusantium doloremque laudantium, totam rem
@@ -896,10 +898,10 @@
                 <ul class="footer__top-nav">
                   <h3 class="footer__column-title">Service</h3>
                   <li class="footer__column-item">
-                    <a href="#" class="footer__column-link">Home</a>
+                    <a href="#home" class="footer__column-link">Home</a>
                   </li>
                   <li class="footer__column-item">
-                    <a href="#" class="footer__column-link">Pricing</a>
+                    <a href="#price" class="footer__column-link">Pricing</a>
                   </li>
                   <li class="footer__column-item">
                     <a href="#" class="footer__column-link">Templates</a>
@@ -911,13 +913,13 @@
                 <ul class="footer__top-nav">
                   <h3 class="footer__column-title">About us</h3>
                   <li class="footer__column-item">
-                    <a href="#" class="footer__column-link">Team</a>
+                    <a href="#testimonial" class="footer__column-link">Team</a>
                   </li>
                   <li class="footer__column-item">
-                    <a href="#" class="footer__column-link">Blog</a>
+                    <a href="#blog" class="footer__column-link">Blog</a>
                   </li>
                   <li class="footer__column-item">
-                    <a href="#" class="footer__column-link">FAQ</a>
+                    <a href="#faq" class="footer__column-link">FAQ</a>
                   </li>
                 </ul>
                 <ul class="footer__top-nav">
@@ -948,8 +950,8 @@
                   Copyright 2022 Estimatesguru All Rights Reserved
                 </div>
                 <div class="footer__bottom-info">
-                  <div class="footer__bottom-privacy">Privacy policy</div>
-                  <div class="footer__bottom-terms">Terms of us</div>
+                  <a class="footer__bottom-privacy" href="#">Privacy policy</a>
+                  <a class="footer__bottom-terms" href="#">Terms of us</a>
                 </div>
               </div>
             </div>
