@@ -1839,3 +1839,85 @@ input[class=contact__form-input] {
     margin-right: 10px;
   }
 }
+@media (max-width: 420px) {
+  .features__bottomsecond {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__bottomfirst {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__descsecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .features__info-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__info-inner span {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .header__top {
+    width: 100%;
+  }
+  .price__toggle {
+    position: relative;
+  }
+  .price__title {
+    margin-bottom: 20px;
+  }
+  .blog__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blog__title {
+    margin-bottom: 20px;
+  }
+  .blog__slider-arrow {
+    background: #f0f9ff;
+  }
+  .testimonial__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .testimonial__title {
+    margin-bottom: 20px;
+  }
+  .testimonial__slider-arrow {
+    background: #fff;
+  }
+  .about__acc-head {
+    margin-right: -15px;
+  }
+}
