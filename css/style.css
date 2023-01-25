@@ -1683,7 +1683,8 @@ input[class=contact__form-input] {
     width: 397px;
   }
   .advantages__subtitle {
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
   }
   .advantages__slider-arrows {
     display: none;
@@ -1709,6 +1710,9 @@ input[class=contact__form-input] {
   }
   .footer__top-about {
     margin-right: 35px;
+  }
+  .business__subtitle {
+    width: 100%;
   }
 }
 @media (max-width: 835px) {
@@ -1783,5 +1787,55 @@ input[class=contact__form-input] {
   .advantages__image img {
     width: 100%;
     max-width: 700px;
+  }
+  .price__option {
+    height: none;
+  }
+}
+@media (max-width: 742px) {
+  .header__img {
+    display: none;
+  }
+  .header__title {
+    max-width: none;
+  }
+  .header__subtitle {
+    max-width: none;
+  }
+}
+@media (max-width: 715px) {
+  .business {
+    display: none;
+  }
+}
+@media (max-width: 682px) {
+  .contact__form {
+    display: none;
+  }
+  .contact__title {
+    max-width: none;
+  }
+  .contact__subtitle {
+    max-width: none;
+  }
+  .about__subtitle {
+    width: 100%;
+  }
+  .footer__column-nav {
+    display: none;
+  }
+  .footer__top-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__top-about {
+    margin-right: 0;
+  }
+  .footer__bottom-copy {
+    margin-right: 10px;
   }
 }
