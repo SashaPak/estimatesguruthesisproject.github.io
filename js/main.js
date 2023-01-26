@@ -5,16 +5,6 @@ $(function () {
     infinite: true,
     dots: true,
     appendDots: $('.advantages__dots'),
-    responsive:
-      [
-        {
-          breakpoint: 890,
-          settings: {
-            slidesToShow: 1,
-            draggable: true,
-          },
-        },
-      ]
   })
 
   $('.advantages__slider-prev').on('click', function (e) {
@@ -34,12 +24,6 @@ $(function () {
       [
         {
           breakpoint: 1150,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 750,
           settings: {
             slidesToShow: 2,
           },
@@ -70,7 +54,7 @@ $(function () {
     responsive:
       [
         {
-          breakpoint: 1150,
+          breakpoint: 1130,
           settings: {
             slidesToShow: 1,
           },
