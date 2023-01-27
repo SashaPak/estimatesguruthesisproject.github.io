@@ -1730,6 +1730,8 @@ input[class="contact__form-input"] {
     }
 }
 
-@media (max-width: 340px) {
-
+@media (max-width: 350px) {
+    .footer__top-nav {
+margin-right: 10px;
+    }
 }

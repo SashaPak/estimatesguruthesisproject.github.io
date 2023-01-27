@@ -2048,3 +2048,8 @@ input[class=contact__form-input] {
     width: 100vw;
   }
 }
+@media (max-width: 350px) {
+  .footer__top-nav {
+    margin-right: 10px;
+  }
+}
